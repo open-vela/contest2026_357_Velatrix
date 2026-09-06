@@ -3,8 +3,13 @@
 # see the file kconfig-language.txt in the NuttX tools repository.
 #
 
-config LVX_USE_DEMO_CONTEST2026_000_HELLO_APP
-	bool "Contest 2026 team 000 hello app"
+config LVX_USE_DEMO_CONTEST2026_357_HELLO_APP
+	bool "Contest 2026 team 357 3D Track Visualization"
 	default n
 	---help---
-		Enable the contest 2026 team 000 hello app demo.
+		Enable the contest 2026 team 357 3D track visualization demo.
+		This application displays 3D运动轨迹 with starfield background.
+
+	if CONFIG_LVX_USE_DEMO_CONTEST2026_357_HELLO_APP
+		# The runtime list page is the active entry point.
+	endif
